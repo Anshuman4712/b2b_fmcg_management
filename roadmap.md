@@ -1,0 +1,4 @@
+- [ ] Replace placeholder home with shopkeeper ordering dashboard
+- [ ] Add interactive quick reorder, barcode input, ledger, cart, delivery/payment, returns, and offline draft views
+- [ ] Apply selected white/red/green visual system and mobile-first responsive layout
+- [ ] Verify preview, interactions, and build diagnostics
