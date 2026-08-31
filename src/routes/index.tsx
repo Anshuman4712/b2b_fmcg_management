@@ -113,7 +113,7 @@ function Index() {
                 <input aria-label="Search products or scan barcode" value={search} onChange={(event) => setSearch(event.target.value)} placeholder="Search product or scan barcode" className="min-w-0 flex-1 bg-transparent text-xs outline-none placeholder:text-app-muted" />
                 <Barcode className="size-4 shrink-0 text-app-red" />
               </label>
-              <Button onClick={() => { setSearch("482019"); announce("Barcode scanned · Foam Bath found"); }} aria-label="Scan barcode" size="icon" className="size-9 bg-app-red text-app-surface shadow-none hover:bg-app-red/90"><Barcode /></Button>
+              <Button onClick={() => { setSearch("foam"); announce("Barcode scanned · Foam Bath found"); }} aria-label="Scan barcode" size="icon" className="size-9 bg-app-red text-app-surface shadow-none hover:bg-app-red/90"><Barcode /></Button>
             </section>
 
             <section className="rise-in px-4 pb-3" style={{ animationDelay: "170ms" }}>
