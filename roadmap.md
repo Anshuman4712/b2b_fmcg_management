@@ -1,4 +1,4 @@
-- [ ] Replace placeholder home with shopkeeper ordering dashboard
-- [ ] Add interactive quick reorder, barcode input, ledger, cart, delivery/payment, returns, and offline draft views
-- [ ] Apply selected white/red/green visual system and mobile-first responsive layout
+- [x] Replace placeholder home with Apni Dukan shopkeeper ordering home
+- [x] Add category search, product cards, cart route, payment options, and minimum order gate
+- [x] Apply selected white/red/green visual system and mobile-first responsive layout
 - [ ] Verify preview, interactions, and build diagnostics
