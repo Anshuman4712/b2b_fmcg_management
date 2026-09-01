@@ -11,6 +11,7 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { ShopCartProvider } from "../lib/shop-cart";
 
 function NotFoundComponent() {
   return (
@@ -77,11 +78,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "TallyCart — Wholesale ordering for dukandars" },
-      { name: "description", content: "Fast wholesale ordering, clear margins, digital hisaab, and delivery planning for Indian shopkeepers." },
-      { name: "author", content: "TallyCart" },
-      { property: "og:title", content: "TallyCart — Wholesale ordering for dukandars" },
-      { property: "og:description", content: "Fast wholesale ordering, clear margins, digital hisaab, and delivery planning for Indian shopkeepers." },
+      { title: "Apni Dukan — Wholesale ordering for Thakurganj, Lucknow" },
+      { name: "description", content: "Fast wholesale ordering, clear margins, and easy payment for shopkeepers in Thakurganj, Lucknow." },
+      { name: "author", content: "Apni Dukan" },
+      { property: "og:title", content: "Apni Dukan — Wholesale ordering for Thakurganj, Lucknow" },
+      { property: "og:description", content: "Fast wholesale ordering, clear margins, and easy payment for shopkeepers in Thakurganj, Lucknow." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
@@ -124,7 +125,9 @@ function RootComponent() {
   return (
     <QueryClientProvider client={queryClient}>
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-      <Outlet />
+      <ShopCartProvider>
+        <Outlet />
+      </ShopCartProvider>
     </QueryClientProvider>
   );
 }
